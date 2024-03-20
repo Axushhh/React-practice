@@ -1,8 +1,13 @@
+import FirstFunc from "./first"
 
 function App() {
   return (
-   <h1>Hello world with vite | ayush</h1>
-  )
+    <>
+      <FirstFunc/>
+      <h2>the app is called</h2>
+      <h3>working with vite</h3>
+    </>
+    )
 }
 
 export default App
