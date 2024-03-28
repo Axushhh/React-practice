@@ -14,7 +14,7 @@ function Layout() {
     <Footer/>
     </>
     // the outlet will use this return as base outlet 
-    // means upper and lower will be same and changes will come in outlet part
+    // means header and footer will be same and changes will come in outlet part
   )
 }
 

@@ -6,6 +6,8 @@ import Layout from './Layout.jsx'
 import Home from './components/Home/Home.jsx'
 import About from './components/About/About.jsx'
 import Contact from "./components/Contact/Contact.jsx";
+import User from './components/User/User.jsx'
+import Github, { githubInfoLoader } from './components/Github/Github.jsx'
 
 // approach 1
 // const router = createBrowserRouter([
@@ -36,9 +38,17 @@ const router = createBrowserRouter(
       <Route path='' element={<Home/>}/>
       <Route path='about' element={<About/>}/>
       <Route path='contact' element={<Contact/>}/>
+      <Route path='user/:userid' element={<User/>}/>
+      <Route
+      loader={githubInfoLoader} 
+      // the loader is used to load any component before it is clicked 
+      //(eg- when we hover over a component or anything it automatically fetch the api and put data in local storage for faster approach ) 
+      path='github' 
+      element={<Github/>}/>
     </Route>
   )
 )
+   // the userid is use to take dynamic value from url
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
