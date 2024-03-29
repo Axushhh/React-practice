@@ -3,7 +3,7 @@ import { useLoaderData } from 'react-router-dom'
 
 function Github() {
     // useLoaderData will give you the data which is returning (githubInfoLoader)
-    const data = useLoaderData() 
+     const data = useLoaderData() 
     // const [data, setData] = useState([])
 
     // useEffect(() => {
